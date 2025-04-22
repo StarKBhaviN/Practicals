@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.page{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar{
+    min-width: 15%;
+    width: 16.5rem;
+    background-color: #006599;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.nav-icon{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    margin-bottom: 3.5rem;
+    color: white;
+}
+
+.ico{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem 0px;
+    filter: invert(1);
+}
+
+.nav-links{
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+.list{
+    list-style-type: none;
+    text-align: left;
+    /* padding-left: 1.5rem; */
+    color: white;
+}
+
+.list-item{
+    padding: 0.3rem 0rem;
+    margin-bottom: 1.5rem;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: #FEFFFA;
+    font-size: 1.2rem;
+}
+
+.list-item a:hover{
+    color: black;
+}
+
+.contentPage{
+    background-color: #FEFFFA;
+    flex-grow: 1;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.showImg{
+    /* border: 2px solid red; */
+    height: 25rem;
+    background-color: gray;
+}
+
+.showImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.neatyContent{
+    padding: 0rem 2rem 1rem 2rem;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+}
+
+.welcomeContent{
+    width: 100%;
+    padding: 2rem 0.1rem;
+}
+
+.newSection{
+    margin-bottom: 2rem;
+}
+
+.aboutContent{
+    /* border: 2px solid blue; */
+    display: flex;
+}
+
+.aboutRight{
+    padding: 0.4rem 1rem;
+}
+
+.imgAbtLeft{
+    height: 100%;
+    min-width:  15rem;
+    max-width: 16rem;
+}
+
+.btnReadMore{
+    padding: 0.8rem 2rem;
+    background-color: #006599;
+    color: #FEFFFA;
+    border: none;
+    outline: none;
+}
+
+.bgBlue{
+    background-color: #006599;
+    color: white;
+}
+
+.txtBlue{
+    color: #006599;
+}
+
+.galleryOne{
+    /* border: 2px solid red; */
+}
+
+.gridOne{
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.grid-item-1{
+    /* height: 10rem;
+    width: 10rem; */
+}
+
+.gridImages{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.gridTwo{
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.grid-item-2{
+    /* height: 50px; */
+    /* width: 50px; */
+}
+
+.gridThree{
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-item-3{
+    /* height: 50px; */
+    /* width: 50px; */
+}
+
+.contactPage{
+    margin-bottom: 4rem;
+}
+.contactContents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactInputs{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contactData{
+    /* border: 2px solid blue; */
+    width: 45%;
+}
+
+.inpCommon{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #006599;
+    outline: none;
+}
+
+.btnMsgSend{
+    background-color: #006599;
+    width: 5rem;
+    height: 3rem;
+    color: #FEFFFA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

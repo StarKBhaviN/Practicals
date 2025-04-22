@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation</title>
+    <script>
+      function validateEmail(email, domains) {
+        const domainPattern = domains
+          .map((domain) => domain.replace(".", "\\."))
+          .join("|");
+        const emailPattern = new RegExp(
+          `^[a-zA-Z0-9._%+-]+@(${domainPattern})$`
+        );
+
+        return emailPattern.test(email);
+      }
+
+      function runValidation() {
+        const email = prompt("Please enter your email address:");
+        const domainsInput = prompt(
+          "Please enter allowed domains separated by commas (e.g. ckpcet.ac.in, ckpcet.com):"
+        );
+        const domains = domainsInput.split(",").map((domain) => domain.trim());
+
+        if (validateEmail(email, domains)) {
+          alert("Valid email address.");
+        } else {
+          alert("Invalid email address.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Email Validation</h1>
+    <button onclick="runValidation()">Validate Email</button>
+  </body>
+</html>
